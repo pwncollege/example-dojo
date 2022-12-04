@@ -1,0 +1,84 @@
+name: Computer Systems Security
+course: ASU CSE 466
+dojo_spec: v2
+completion_belt: yellow
+description: |
+  Dojo descriptions support markdown!
+  You can make things **bold**, _italic_, and so on.
+  You can also [link to places](https://pwn.college)!
+
+  ![maybe you can even make images?](https://picsum.photos/200 "maybe you can even embed images!").
+
+time_created: 2023-01-01T00:00:00-07:00
+modules:
+
+  - name: Example Introduction
+    id: introduction
+    resources:
+      - header: This is an example module with _no challenges_!
+      - name: Welcome
+        markdown: |
+          You can put markdown _here_ as well!
+          The `resources` section allows you to add different resources depending on the keys you provide
+          for each item. You can add:
+
+          - videos, by providing `name`, `video`, and `playlist` entries. The `video` entry is the youtube video ID, the `playlist` entry is the youtube playlist ID, and the `slides` entry is the Google Slides document ID.
+          - slides (must provide `slides` key)
+          - expandable markdown text (by providing `markdown`, like this)
+          - embedded markdown text (by providing `header`).
+          - iframed data (by providing `iframe`)
+      - name: "An example video with slides"
+        video: bJTThdqui0g
+        playlist: PL-ymxv0nOtqrxUaIefx0qEC7_155oPEb7
+        slides: 1YlTxeZg03P234EgG4E4JNGcit6LZovAxfYGL1YSLwfc
+      - name: "An example video with some text"
+        markdown: Some description from me!
+        video: bJTThdqui0g
+        playlist: PL-ymxv0nOtqrxUaIefx0qEC7_155oPEb7
+      - name: "Just slides"
+        slides: 1YlTxeZg03P234EgG4E4JNGcit6LZovAxfYGL1YSLwfc
+      - name: "Just a video"
+        video: bJTThdqui0g
+        playlist: PL-ymxv0nOtqrxUaIefx0qEC7_155oPEb7
+      - name: "An example iframe"
+        slides: 1oo9_J2YF6o10MM99c-BkJ_gIehY39M6WHDgTEl2ovRA
+
+  - name: Example Module With Challenges
+    id: challenges
+    challenges:
+      - description: |
+          You can give a good description in _markdown_!
+        name: level1
+        category: example-challenges
+
+  - name: Example Module With Imported Challenges
+    id: imported-challenges
+    resources:
+      - header: You can import challenges from other modules, as demonstrated here! You can optionally provide your own description.
+    challenges:
+      - import: cse365/misuse/level1
+      - import: cse365/misuse/level2
+        description: this is a custom description!
+
+  - name: Example Module With Imported Challenges
+    id: imported-challenges
+    time_visible: 2023-01-01T13:00:00-07:00
+    time_assigned: 2023-01-01T13:00:00-07:00
+    time_ec_part: 2023-02-19T18:30:00-07:00
+    time_ec_full: 2023-02-21T00:00:00-07:00
+    time_due: 2023-02-25T11:00:00-07:00
+    late_penalty: 0.5
+    ec_threshold: 2
+    resources:
+      - header: |
+          You can set a number of attributes on the module level:
+
+          - `time_visible` controls when the module and its resources (but not challenges) will become visible
+          - `time_assigned` controls when the module challenges become accessible
+          - `time_due` controls when the `late_penalty` (which is 0.5 by default) is applied to challenge solves. Challenges remain accessible after this time.
+          - `time_ec_part` and `time_ec_full` control "early bird" extra credit. If students solve `ec_threshold` challenges before `time_ec_full`, they get 1% extra credit to their final grades. Otherwise, if they solve `ec_threshold/2` challenges before `time_ec_part`, they get 0.5% extra credit.
+    challenges:
+      - import: cse365/misuse/level1
+      - import: cse365/misuse/level2
+      - import: cse365/misuse/level3
+      - import: cse365/misuse/level4
