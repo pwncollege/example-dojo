@@ -50,6 +50,8 @@ modules:
           You can give a good description in _markdown_!
         name: level1
         category: example-challenges
+      - name: level2
+        category: example-challenges
 
   - name: Example Module With Imported Challenges
     id: imported-challenges
