@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp /flag /tmp/here_it_is
+chmod 644 /tmp/here_it_is

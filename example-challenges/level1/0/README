@@ -1,0 +1,1 @@
+The files from the level directory are copied into /challenge, set up to be owned by root, and made SUID-executable.
