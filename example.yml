@@ -44,7 +44,7 @@ modules:
         slides: 1oo9_J2YF6o10MM99c-BkJ_gIehY39M6WHDgTEl2ovRA
 
   - name: Example Module With Challenges
-    id: challenges
+    id: original-challenges
     resources:
       - name: click me!
         markdown: of course, you can have resources and challenges in the same module
