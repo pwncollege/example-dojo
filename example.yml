@@ -45,9 +45,6 @@ modules:
 
   - name: Example Module With Challenges
     id: challenges
-    resources:
-      - name: click me!
-        markdown: of course, you can have resources and challenges in the same module
     challenges:
       - description: |
           You can give a good description in _markdown_!
@@ -65,8 +62,8 @@ modules:
       - import: cse365/misuse/level2
         description: this is a custom description!
 
-  - name: Example Module With Due Dates
-    id: with-due-dates
+  - name: Example Module With Imported Challenges
+    id: imported-challenges
     time_visible: 2023-01-01T13:00:00-07:00
     time_assigned: 2023-01-01T13:00:00-07:00
     time_ec_part: 2023-02-19T18:30:00-07:00
