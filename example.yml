@@ -1,7 +1,7 @@
 name: Dojo Example
 course: Optional Field
 dojo_spec: v2
-completion_belt: yellow
+completion_emoji: "\U0001F408"
 description: |
   Dojo descriptions support markdown!
   You can make things **bold**, _italic_, and so on.
