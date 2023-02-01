@@ -20,7 +20,7 @@ modules:
 
       - id: banana
         name: Banana
-        descrption: This is banana.
+        description: This is banana.
 
   - id: world
     name: World
