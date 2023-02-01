@@ -1,1 +1,0 @@
-All files from the "_global" directory are also copied into /challenge and made SUID-executable. This can help with common resources for all levels in a module.
