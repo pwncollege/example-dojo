@@ -2,6 +2,8 @@
 
 This repositories features an example dojo.
 
+The dojo is defined by [dojo.yml](./dojo.yml).
+
 It contains two modules, `hello` and `world`.
 
 The module `hello` features challenges `apple` and `banana`.
