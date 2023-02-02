@@ -6,5 +6,5 @@ dir = pathlib.Path(__file__).parent
 planets = (dir / "planets.txt").read_text().strip().splitlines()
 
 for planet in planets:
-    planet_path = dir / planet.lower()
+    planet_path = dir / f"planet_{planet.lower()}"
     planet_path.write_text(planet)
