@@ -23,8 +23,8 @@ See each challenge's README for further information:
 
 ### The Flag
 
-The flag is located at `/flag`, and is only readable by root. 
-The challenge will execute as root.
+The flag is located at `/flag`, and is only readable by `root`. 
+The challenge will execute as `root`.
 Nothing else is true.
 
 Do not assume any structure to the flag. 
@@ -35,7 +35,7 @@ These things WILL change, and if you rely on them, your challenge WILL break.
 ### The Challenge
 
 The challenge is [`setuid`](https://en.wikipedia.org/wiki/Setuid).
-This is how your challenge will execute as root.
+This is how your challenge will execute as `root`.
 
 What this *really* means:
 - The process will run with an **effective** user of `root`.
