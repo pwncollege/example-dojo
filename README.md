@@ -19,6 +19,10 @@ See each challenge's README for further information:
 - [mars](./world/mars)
 - [venus](./world/venus)
 
+## Importing Modules and Challenges
+
+For an example of how you can import another dojo's challenges, see: [pwncollege/example-import-dojo](https://github.com/pwncollege/example-import-dojo).
+
 ## Challenge Writing Laws
 
 ### The Flag
