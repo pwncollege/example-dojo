@@ -3,7 +3,7 @@ id: example
 name: Example Dojo
 
 description: |
-  This is an example dojo.
+  This is an [example dojo](https://github.com/pwncollege/example-dojo).
   Fork this repository, and create your own dojo!
 
 modules:
