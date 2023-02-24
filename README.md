@@ -23,6 +23,10 @@ See each challenge's README for further information:
 
 For an example of how you can import another dojo's challenges, see: [pwncollege/example-import-dojo](https://github.com/pwncollege/example-import-dojo).
 
+## Automatically Updating Dojo
+
+For instructions on how you can setup automatic dojo updates, using GitHub actions, see: [pwncollege/dojo-update](https://github.com/pwncollege/dojo-update).
+
 ## Challenge Writing Laws
 
 ### The Flag
