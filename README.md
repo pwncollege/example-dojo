@@ -19,6 +19,36 @@ See each challenge's README for further information:
 - [mars](./world/mars)
 - [venus](./world/venus)
 
+## YAML Structure of `dojo.yml`
+
+### Dojo
+
+The top-level object is the `Dojo`. It consists of six properties:
+
+- `id`: **Required**. A unique identifier for the Dojo.
+- `name`: **Required**. The display name of the Dojo.
+- `description`: **Optional**. Additional details about the Dojo. This can include formatted markdown text.
+- `type`: **Optional**. This field can take the values `course`, `topic`, or `hidden`. `course` places it in the "Courses" section. `topic` places the Dojo in the "Topics" section. `hidden` means the Dojo won't be listed (but is still accessible). If the type field is omitted or contains a value other than these three, the Dojo will appear in the "More" section.
+- `password`: **Optional**. A password that users need to join the Dojo. If omitted, the Dojo is open for anyone to join.
+- `modules`: **Required**. An array of `Module` objects.
+
+### Module
+
+Each `Module` object within the `modules` array consists of the following properties:
+
+- `id`: **Required**. A unique identifier for the Module.
+- `name`: **Required**. The display name of the Module.
+- `description`: **Optional**. Additional details about the Module.
+- `challenges`: **Required**. An array of `Challenge` objects.
+
+### Challenge
+
+Each `Challenge` object within the `challenges` array of a `Module` consists of the following properties:
+
+- `id`: **Required**. A unique identifier for the Challenge.
+- `name`: **Required**. The display name of the Challenge.
+- `description`: **Optional**. Additional details about the Challenge.
+
 ## Importing Modules and Challenges
 
 For an example of how you can import another dojo's challenges, see: [pwncollege/example-import-dojo](https://github.com/pwncollege/example-import-dojo).
