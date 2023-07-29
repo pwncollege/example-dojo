@@ -1,15 +1,16 @@
-id: example
+id: test
 
-name: Example Dojo
+name: Example test
 
 description: |
-  This is an [example dojo](https://github.com/pwncollege/example-dojo).
-  Fork this repository, and create your own dojo!
+test
 
-type: example
+type: course
 
 award:
   emoji: 😀
+
+password：
 
 modules:
 
@@ -27,20 +28,4 @@ modules:
         name: Banana
         description: This is banana.
 
-  - id: world
-    name: World
-    description: The second module in this example dojo.
 
-    challenges:
-
-      - id: earth
-        name: Earth
-        description: This is earth.
-
-      - id: mars
-        name: Mars
-        description: This is mars.
-
-      - id: venus
-        name: Venus
-        description: This is venus.
