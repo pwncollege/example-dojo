@@ -1,0 +1,8 @@
+name: World
+challenges:
+  - id: earth
+    name: Earth
+  - id: mars
+    name: Mars
+  - id: venus
+    name: Venus
