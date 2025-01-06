@@ -1,4 +1,4 @@
-#!/opt/pwn.college/python
+#!/usr/local/bin/python
 
 import sys
 

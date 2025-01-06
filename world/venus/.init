@@ -16,6 +16,7 @@ planet = random.choice(planets_path.read_text().strip().splitlines())
 
 template = string.Template(launch_template_path.read_text())
 launch_path.write_text(template.safe_substitute(planet=planet))
+launch_path.chmod(0o4755)
 
 launch_template_path.unlink()
 planets_path.unlink()
