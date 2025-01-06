@@ -1,4 +1,8 @@
 #!/usr/bin/exec-suid -- /usr/local/bin/python -I
 
+import subprocess
+
+subprocess.run(["/challenge/takeoff", "${planet}"])
+
 with open("/flag") as f:
     print(f.read())

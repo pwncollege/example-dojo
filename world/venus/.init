@@ -1,9 +1,8 @@
-#!/opt/pwn.college/python
+#!/usr/local/bin/python
 
 import pathlib
 import random
-
-import jinja2
+import string
 
 with open("/flag") as f:
     random.seed(f.read())
@@ -11,12 +10,12 @@ with open("/flag") as f:
 init_path = pathlib.Path(__file__)
 planets_path = (pathlib.Path(__file__).parent / "planets.txt")
 launch_path = (pathlib.Path(__file__).parent / "launch")
-launch_template_path = (pathlib.Path(__file__).parent / "launch.j2")
+launch_template_path = (pathlib.Path(__file__).parent / "launch.template")
 
 planet = random.choice(planets_path.read_text().strip().splitlines())
 
-template = jinja2.Template(launch_template_path)
-launch_path.write_text(template.render(planet=planet))
+template = string.Template(launch_template_path.read_text())
+launch_path.write_text(template.safe_substitute(planet=planet))
 
 launch_template_path.unlink()
 planets_path.unlink()
