@@ -3,6 +3,7 @@ name: Example Dojo
 type: example
 award:
   emoji: 😀
+image: pwncollege/challenge-simple
 modules:
   - id: hello
   - id: world
