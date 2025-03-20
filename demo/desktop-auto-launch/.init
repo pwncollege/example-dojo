@@ -13,7 +13,13 @@ xfce_run() {
   setsid su "$USER" -c "env - $(xfce_env) $*"
 }
 
-# Consider using `--geometry` to set the window size and position
-# Consider using `--fullscreen` to launch the application in fullscreen mode
+# Launch a background process that waits for xfce4-session and then runs the command.
+(
+  while ! pgrep -u "$USER" xfce4-session > /dev/null; do
+    sleep 1
+  done
 
-xfce_run exo-open --launch TerminalEmulator
+  # Consider using `--geometry` to set the window size and position
+  # Consider using `--fullscreen` to launch the application in fullscreen mode
+  xfce_run exo-open --launch TerminalEmulator
+) &
