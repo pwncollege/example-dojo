@@ -7,3 +7,4 @@ image: pwncollege/challenge-simple
 modules:
   - id: hello
   - id: world
+  - id: demo

@@ -1,0 +1,4 @@
+name: Demo
+challenges:
+  - id: desktop-auto-launch
+    name: Desktop Auto Launch

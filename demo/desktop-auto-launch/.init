@@ -1,0 +1,19 @@
+#!/bin/sh
+
+PATH="/run/dojo/bin:$PATH"
+USER="hacker"
+
+xfce_env() {
+  local session_pid
+  session_pid=$(pgrep -u "$USER" xfce4-session | head -n1)
+  xargs -0 -a /proc/"$session_pid"/environ
+}
+
+xfce_run() {
+  setsid su "$USER" -c "env - $(xfce_env) $*"
+}
+
+# Consider using `--geometry` to set the window size and position
+# Consider using `--fullscreen` to launch the application in fullscreen mode
+
+xfce_run exo-open --launch TerminalEmulator
