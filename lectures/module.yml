@@ -5,6 +5,7 @@ resources:
     video: hh4XAU6XYP0
     slides: 14ZJRIyf0HnoYO1N8GI5ygE-ZVgdhjJrvzkETFLz7NIo
   - id: graded-lecture
+    type: challenge
     name: Graded Lecture
     description: |
       Lectures can be graded by embedding them as challenges!
