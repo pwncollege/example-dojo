@@ -8,3 +8,4 @@ modules:
   - id: hello
   - id: world
   - id: demo
+  - id: lectures

@@ -1,0 +1,17 @@
+name: Lectures
+resources:
+  - name: Ungraded Lecture
+    type: lecture
+    video: hh4XAU6XYP0
+    slides: 14ZJRIyf0HnoYO1N8GI5ygE-ZVgdhjJrvzkETFLz7NIo
+  - id: graded-lecture
+    name: Graded Lecture
+    description: |
+      Lectures can be graded by embedding them as challenges!
+      This is a demonstration of this capability.
+
+      Graded lectures are actually custom challenges with a custom interface.
+      The challenge runs a special docker container, and the way to configure it is to include a .config file containing the youtube ID for the video and the duration in seconds that must be watched before the flag is given.
+    image: pwncollege/challenge-lecture
+    interfaces:
+      Challenge: 80
