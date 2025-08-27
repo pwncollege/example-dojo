@@ -1,6 +1,6 @@
 # Example Dojo
 
-This repositories features an example dojo.
+This repository features an example dojo.
 
 The dojo is defined by [dojo.yml](./dojo.yml).
 
