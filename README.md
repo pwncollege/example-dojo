@@ -1,6 +1,6 @@
 # Example Dojo
 
-This repositories features an example dojo.
+This repository features an example dojo.
 
 The dojo is defined by [dojo.yml](./dojo.yml).
 
@@ -84,7 +84,7 @@ When `/bin/sh` (which is linked to `/bin/dash`) is run under this, it will immed
 This means that both the **effective** and **real** user will be `hacker`, and the flag will not be accessible.
 This affects `system`, which ultimately just runs `/bin/sh`.
 
-The challenge can rememedy this by explicitly setting the **real** user to the **effective** user:
+The challenge can remedy this by explicitly setting the **real** user to the **effective** user:
 ```c
 setreuid(geteuid(), -1)
 ```
