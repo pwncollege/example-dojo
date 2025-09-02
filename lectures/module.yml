@@ -15,5 +15,5 @@ resources:
       The challenge runs a special docker container, and the way to configure it is to include a .config file containing the youtube ID for the video and the duration in seconds that must be watched before the flag is given.
     image: pwncollege/challenge-lecture
     interfaces:
-      name: Challenge
-      port: 80
+      - name: Challenge
+        port: 80
