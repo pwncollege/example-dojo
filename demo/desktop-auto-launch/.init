@@ -2,6 +2,7 @@
 
 PATH="/run/dojo/bin:$PATH"
 USER="hacker"
+chmod 644 /flag
 
 xfce_env() {
     local session_pid
